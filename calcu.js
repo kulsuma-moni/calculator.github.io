@@ -1,6 +1,11 @@
 let screen = document.getElementById('screen');
 buttons = document.querySelectorAll('button');
 let screenValue = " ";
+function power(y){
+    var x =screenValue;
+    x = Math.pow(x,y);
+    screenValue = x;
+}
 
 for(item of buttons){
     item.addEventListener('click',(e)=>{
@@ -12,6 +17,22 @@ for(item of buttons){
         }
         else if(buttonText == "="){
             screen.value = eval(screenValue);
+        }
+        else if(buttonText == "B"){
+            screenValue = "";
+            screen.value = screenValue;
+        }
+        // else if(buttonText == "x^2"){
+        //     screenValue = "";
+        //     screen.value = screenValue;
+        // }
+        // else if(buttonText == "x^3"){
+        //     screenValue = "";
+        //     screen.value = screenValue;
+        // }
+        else if(buttonText == "r"){
+            screenValue = "3.14";
+            screen.value = screenValue;
         }
         else{
             screenValue += buttonText;

@@ -18,8 +18,8 @@
             text-align: center;
             background: #fff;
             box-shadow: 3px 0px 14px 0px #41413d;
-            width: 320px;
-            height: 400px;
+            width: 340px;
+            height: 460px;
             border-radius: 20px;
             margin: 50px auto 0 auto;
         }
@@ -61,6 +61,9 @@
         .colr_2{
             color: #ff652f;
         }
+        button span{
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -68,6 +71,12 @@
         <div class="calculator">
             <input type="text" name="screen" id="screen">
             <table>
+                <tr>
+                    <td><button class="colr_2">r</button></td>
+                    <td><button class="colr_2" onclick="power(3)">x<span>^3</span></button></td>
+                    <td><button class="colr_2" onclick="power(2)">x<span>^2</span></button></td>
+                    <td><button class="colr_2">B</button></td>
+                </tr>
                 <tr>
                     <td><button>(</button></td>
                     <td><button>)</button></td>
