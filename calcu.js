@@ -2,7 +2,7 @@ let screen = document.getElementById('screen');
 buttons = document.querySelectorAll('button');
 let screenValue = " ";
 function power(y){
-    var x =screenValue;
+    var x = screenValue;
     x = Math.pow(x,y);
     screenValue = x;
 }
@@ -22,14 +22,14 @@ for(item of buttons){
             screenValue = "";
             screen.value = screenValue;
         }
-        // else if(buttonText == "x^2"){
-        //     screenValue = "";
-        //     screen.value = screenValue;
-        // }
-        // else if(buttonText == "x^3"){
-        //     screenValue = "";
-        //     screen.value = screenValue;
-        // }
+        else if(buttonText == "x^2"){
+            // screenValue = x;
+            screen.value = screenValue;
+        }
+        else if(buttonText == "x^3"){
+            // screenValue = "";
+            screen.value = screenValue;
+        }
         else if(buttonText == "r"){
             screenValue = "3.14";
             screen.value = screenValue;
