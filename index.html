@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <style>
-        *{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+*{
             margin:0;
             padding: 0;
         }
@@ -17,7 +24,8 @@
         .calculator{
             text-align: center;
             background: #fff;
-            box-shadow: 3px 0px 14px 0px #41413d;
+            -webkit-box-shadow: 3px 0px 14px 0px #41413d;
+                    box-shadow: 3px 0px 14px 0px #41413d;
             width: 340px;
             height: 460px;
             border-radius: 20px;
@@ -27,7 +35,8 @@
             margin:auto;
         }
         input{
-            box-shadow: inset -3px -3px 6px rgb(238, 236, 236), inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: inset -3px -3px 6px rgb(238, 236, 236), inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+                    box-shadow: inset -3px -3px 6px rgb(238, 236, 236), inset 3px 3px 6px rgba(0, 0, 0, 0.4);
             width: 220px;
             height: 30px;
             padding: 8px 10px;
@@ -49,14 +58,16 @@
             border-radius: 50%;
             margin: 3px;
             border: 1px solid #aea0a0;
-            box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+                    box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
             border: 1px solid #f7f3ef;
             outline: 0;
         }
         button:hover{
             background: #ccc;
             border: 1px solid #ccc;
-            box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
+                    box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
         }
         .colr_2{
             color: #ff652f;
