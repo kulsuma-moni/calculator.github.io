@@ -22,11 +22,11 @@ for(item of buttons){
             screenValue = "";
             screen.value = screenValue;
         }
-        else if(buttonText == "x^2"){
+        else if(buttonText == "X^2"){
             // screenValue = x;
             screen.value = screenValue;
         }
-        else if(buttonText == "x^3"){
+        else if(buttonText == "X^3"){
             // screenValue = "";
             screen.value = screenValue;
         }
