@@ -31,7 +31,7 @@ for(item of buttons){
             screen.value = screenValue;
         }
         else if(buttonText == "r"){
-            screenValue = "3.14";
+            screenValue += "3.14";
             screen.value = screenValue;
         }
         else{
